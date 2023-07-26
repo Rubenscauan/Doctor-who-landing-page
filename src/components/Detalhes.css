@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.detalhes {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+
+
+.inscricao {
+    text-align: center;
+
+}
+
+
+h1 {
+    color: #03223D;
+    font-family: 'Abril Fatface', sans-serif;
+    letter-spacing: 1px;
+
+}
+
+h3 {
+    color: #3F3F3F;
+}
+
+
+.inscrevase {
+    display: inline-block;
+    background-color: #03223D;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.casal {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+}
+
+.texto-casal {
+    text-align: right;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.companions {
+    text-align: center;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.companions-div {
+    background-color: #03223D;
+    border-radius: 75px;
+    width: 50%;
+    height: 125px;
+    margin-top: 3%;
+    color: white;
+    font-size: 10px;
+
+}
+
+.companions-div h2 {
+    margin-top: 20px;
+    text-align: start;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.companions-titulo {
+    display: flex;
+
+}
+
+.tardis {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.tardis-box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.tardis-fatos {
+    text-align: start;
+    margin-left: 50px;
+    width: 46%;
+    margin-top: 3%;
+
+}
+
+.fatos-box {
+    display: flex;
+    margin-right: 10px;
+    margin-top: 20px
+}
+
+
+.bill-form {
+    display: flex;
+
+}
+
+.bill {
+    position: relative;
+}
+
+.base-image {
+    width: 500px;
+    /* ou ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-left: 30%;
+    margin-top: 80px;
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay-image {
+    margin-top: 300px;
+    margin-left: -20px;
+    width: 261%;
+    /* ou ajuste o tamanho conforme necessário */
+    height: 800px;
+}
+
+.formulario {
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 10%;
+    width: 40%;
+
+}
+
+
+.formulario-box {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Adiciona sombra com valores x, y, blur e cor da sombra */
+    background-color: #ffff;
+    border-radius: 40px;
+}
+
+.formulario input {
+    width: 95%;
+    border-radius: 10px;
+    height: 60px;
+    box-shadow: none;
+}
+
+.formulario-campos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+}
+
+.formulario-campos h2 {
+    color: #03223D;
+    text-align: start;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.enviar {
+    width: 95%;
+    background-color: #03223D;
+    color: white;
+    margin-right: 20px;
+    border-radius: 20px;
+    height: 60px;
+    font-size: 20px;
+    font-family: 'Abril Fatface', sans-serif;
+    border: 1px solid #03223D;
+}
+
+.rodape {
+    position: absolute;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+
+.rodape h3 {
+    color: white;
+    font-style: bold;
+    margin-left: 100px;
+
+}
+
+.rodape h4 {
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+
+.contatos {
+    margin-left: 200px;
+
+}
+
+.contatos h3 {
+    margin-left: 50px;
+}
+
+.contatos a {
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+
+.fim {
+    position: absolute;
+    color: white;
+    width: 100%;
+    margin-top: 200px;
+    border-top: 0.5px solid;
+}
+
+.fim-escrita {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+
+/* Estilos para telas menores */
+/* Estilos padrão */
+
+
+/* Estilos para telas menores */
+@media (max-width: 767px) {
+    .detalhes {
+        flex-direction: column;
+    }
+
+    .inscricao {
+        padding: 20px;
+    }
+
+    .casal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-casal {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .companions {
+        padding: 20px;
+    }
+
+    .companions-div {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .tardis {
+        text-align: center;
+        padding: 20px;
+    }
+
+
+    .tardis-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tardis-fatos {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .base-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .overlay-image {
+        display: none;
+    }
+
+    .formulario {
+        position: relative; /* Alterado para relative */
+        margin-left: 0;
+        margin-top: 20px; /* Alterado para criar espaço abaixo do elemento acima */
+        width: 90%;
+    }
+
+    .formulario h1,
+    h3 {
+        background-color: #ffffff;
+
+    }
+
+    .formulario-box {
+        width: 100%;
+    }
+
+    .bill-form {
+        display: flex;
+        flex-direction: column; /* Adicionamos essa linha para colocar o formulário acima da imagem */
+        align-items: flex-start;
+      }
+      
+      .bill {
+        position: relative;
+        margin-bottom: -400px; /* Ajustamos a margem inferior para que a imagem fique atrás do formulário */
+        z-index: -1; /* Definimos o z-index para que a imagem fique atrás do formulário */
+      }
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        background-color: #03223D;
+        margin-bottom: 30px; /* Adicione uma margem inferior para dar espaço ao rodapé */
+        position: relative; /* Adicione uma margem inferior para dar espaço ao rodapé */
+
+      }
+    
+      .rodape h3,
+      .rodape h4 {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+        background-color: #03223D;
+      }
+    
+      .contatos {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 20px;
+      }
+    
+      .contatos a {
+        margin: 5px;
+      }
+
+    .fim {
+        margin-top: 40px;
+    }
+}
+
+/* Estilos para tablets e telas maiores */
+@media (min-width: 768px) {
+    .casal {
+        justify-content: space-between;
+    }
+
+
+
+    .tardis {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .tardis-box {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .tardis-fatos {
+        width: 46%;
+    }
+
+    .base-image {
+        width: 500px;
+        max-width: 100%;
+        height: auto;
+        margin-left: 10%;
+        margin-top: 80px;
+    }
+
+    .bill-form {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .formulario {
+        position: absolute;
+        margin-left: 50%;
+        margin-top: 10%;
+        width: 40%;
+    }
+
+    .formulario-box {
+        width: 100%;
+    }
+
+    .rodape {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+
+    .contatos {
+        text-align: left;
+        margin-left: 200px;
+        margin-top: 0;
+    }
+
+    .fim {
+        margin-top: 200px;
+    }
+}

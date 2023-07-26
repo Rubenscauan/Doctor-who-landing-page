@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main{
+    background-color: #03223D;
+    height: 141vh;
+    border-bottom-left-radius: 15%;
+    
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px white solid;
+
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    /* Para preencher o espaço disponível no contêiner */
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    /* Para preencher o espaço disponível no contêiner */
+    justify-content: space-evenly;
+    /* Espaçamento igual entre os itens */
+}
+
+.items a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+/* Estilo especial para o último link "Saiba Mais" */
+.items a:last-child {
+    background-color: #003B6F;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Estilo para o logotipo no menu */
+.logo {
+    margin-right: 20px;
+    /* Ou qualquer outro valor de espaçamento desejado */
+}
+
+.imagem {
+    border-bottom-right-radius: 10%;
+    border-top-right-radius: 10%;
+    width: 90%;
+}
+
+.imagem-box {
+    margin-top: 2%;
+    
+}
+
+
+
+
+/* Estilo para telas menores, como dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        /* Empilhar os elementos verticalmente */
+        align-items: center;
+    }
+
+    .menu-items {
+        margin-top: 10px;
+        /* Espaçamento entre o logotipo e os itens */
+    }
+
+    .items {
+        flex-direction: column;
+        /* Empilhar os itens verticalmente */
+    }
+
+    .logo {
+        margin-right: 0;
+        /* Remover margem do logotipo em telas menores */
+        margin-bottom: 10px;
+        /* Adicionar espaço abaixo do logotipo */
+    }
+
+    .items a {
+        margin: 5px 0;
+        /* Espaçamento entre os itens */
+    }
+
+    /* Estilo para o último link "Saiba Mais" em telas menores */
+    .items a:last-child {
+        margin-left: 0;
+        /* Remover margem esquerda */
+        margin-bottom: 10px;
+        /* Adicionar espaço abaixo do último link */
+    }
+}
